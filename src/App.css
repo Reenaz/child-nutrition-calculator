@@ -2,37 +2,74 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+html, body {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: #434345;
+  /*font-weight: bold;*/
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+header {
+  height: 60px;
+  font-family: "Amatic SC", cursive;
+  background-color: rgb(86, 208, 196);
+  vertical-align: middle;
+
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header > h1 {
+  font-weight: bold;
   color: white;
+  text-align: left;
+  padding-left: 120px;
+  padding-top: 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  padding-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculate-btn {
+  margin-top: 20px;
+  background-color: rgb(86, 208, 196);
+  font-weight: bold;
+  border: none;
+}
+
+.calculate-btn:hover, .calculate-btn:focus {
+  background-color: rgb(86, 208, 196);
+  outline: none;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.ant-radio-inner {
+  border-bottom-color: rgb(86, 208, 196);
+  border-left-color: rgb(86, 208, 196);
+  border-right-color: rgb(86, 208, 196);
+  border-top-color: rgb(86, 208, 196);
+}
+
+.ant-radio-input:hover, .ant-radio-input:focus, .ant-radio-checked::after {
+  border: 1px solid rgb(86, 208, 196);
+
+}
+
+.ant-radio-inner:after {
+  background-color: rgb(86, 208, 196);
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: rgb(86, 208, 196);
+}
+
+.ant-radio-wrapper:hover .ant-radio, .ant-radio:hover .ant-radio-inner, .ant-radio-input:focus + .ant-radio-inner {
+  border-color: rgb(86, 208, 196);
 }
